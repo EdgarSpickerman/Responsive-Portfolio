@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <!-- 
+        These links are relative file paths. So we would expect to see the files 
+     -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- This Main wrapper is here so we can use a sticky footer -->
+    <div id="main-wrapper">
+        <!-- 
+            This header wrapper is here so we can set the header's width to align with the rest of the content.  
+        -->
+        <div id="header-wrapper">
+            <h1>Edgar Spickerman Jr</h1>
+            <ul id="main-nav">
+                <!-- 
+                    These href's are relative file paths. They are relative to the folder where index.html so we would expect to see the files index.html, contact.html, portfolio.html in Responsive. 
+                -->
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- This content-wrapper is here so we can set the width to be the same as the header's width  -->
+        <div id="content-wrapper">
+            <!-- this div#section is the only actual content that is changing between all three pages -->
+            <div id="section">
+                <h3>About Me</h3>
+                <!-- We have a div here because we are gonna have a floated image -->
+                <div id="profile">
+                    <!-- 
+                        These href's are relative file paths. They are relative to the folder where index.html so we would expect to see an image Edgar-Spickerman-Jr in Responsive/assets/images.
+                    -->
+                    <img src="assets/images/Edgar-Spickerman-Jr" alt="Picture of Edgar Spickerman Jr">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minus ipsam corrupti quaerat omnis, deleniti, rem repudiandae praesentium doloribus ex quibusdam commodi illum excepturi? Sint obcaecati sequi illo corporis magnam?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat sed error tempore accusantium amet dolorum deserunt rerum eveniet asperiores est. A numquam necessitatibus mollitia molestias quia reprehenderit, suscipit sint perspiciatis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque odio accusamus id ratione explicabo iure reiciendis? Sit voluptatibus suscipit soluta in doloremque accusamus quod illo, labore distinctio tenetur quo?</p>
+                </div>
+                <!-- End of the content that is changing -->
+            </div>
+            <div id="sidebar">
+                <h3>Connect with Me</h3>
+                <ul id="social-nav">
+                    <!-- 
+                        These href's are relative file paths. They are relative to the folder where index.html so we would expect to see these images in Responsive/assets/images/icons. Lastly, these are 3rd party links so we are opening them up in a new tabs. 
+                    -->
+                    <li><a href="https://github.com/" target="_blank"><img src="assets/images/icons/github.svg" alt="Github Logo"></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/images/icons/linked.svg" alt="Github Logo"></a></li>
+                    <li><a href="https://stackoverflow.com/" target="_blank"><img src="assets/images/icons/stack.svg" alt="Github Logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; 2018 Edgar Spickerman Jr</p>
+    </div>
+</body>
+</html>
