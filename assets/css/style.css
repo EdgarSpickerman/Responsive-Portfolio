@@ -1,0 +1,141 @@
+/* General */
+    *{
+        box-sizing: border-box;
+    }
+
+    /* styling all links */
+    a,a:visited{
+        text-decoration: none;
+        color: #777;
+    }
+
+    /* setting the navigation li's to inline block so they are not vertically stacked */
+    #main-nav li, #social-nav li{
+        display: inline-block;
+    }
+
+    img,input,textarea{
+        width:100%;
+    }
+    .default-lay{
+        width: 90%;
+    }
+
+/* Color Classes */
+    .color-white{
+        color:#fff;
+    }
+
+    .color-gray{
+        color:#777;
+    }
+/* Text alignment Classes */
+    .tc{
+        text-align: center;
+    }
+/* background classes for colors and or images */
+    .bg-img{
+        /* 
+            This file path for the background image is relative to this directory. This directory is Responsive/assets/.
+            So to access the image we want we are gonna go up 1 directory which is assets.
+        */
+        background:url('../images/backgrounds/scratch.png');
+    }
+
+    .bg-gray{
+        background-color: #777;
+    }
+
+    .bg-primary{
+        background-color: #4aaaa5;
+    }
+
+    .bg-white{
+        background-color: #fff;
+    }
+
+
+
+/* Margin Classes */
+    .mx-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mb{
+        margin-bottom: 1%;
+    }
+/* padding Classes*/
+    .pb{
+        padding-bottom:1%;
+    }
+
+/* Border Classes */
+    .bb{
+        border-bottom: 2px solid red;
+    }
+    .br{
+        border-right:1px solid red;
+    }
+    .bt{
+        border-top: 4px solid #4aaaa5;
+    }
+
+/*  Media Queries*/
+
+    @media (min-width: 768px){
+        .clearfix:after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+
+        .float-md-left{
+            float: left;
+        }
+
+        .float-md-right{
+            float: right;
+        }
+
+        .w-50{
+            width: 50%;
+        }
+
+        .pr-md{
+            padding-right: 1%;
+        }
+        
+        .lay-80{
+            width:80%;
+        }
+    }
+
+    @media (min-width: 980px){
+        /* Unsetting floated Images */
+        img.float-md-left{
+            float:none;
+        }
+        .pr-md{
+            padding-right:0;
+        }
+
+        .float-lg-left{
+            float:left;
+        }
+
+        .float-lg-right{
+            float:right;
+        }
+        .w-100{
+            width:100%;
+        }
+        .w-60{
+            width:60%;
+        }
+        .w-35{
+            width:35%;
+        }
+        .lay-70{
+            width:70%;
+        }
+    }
