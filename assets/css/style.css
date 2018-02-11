@@ -29,6 +29,9 @@
     .color-gray{
         color:#777;
     }
+    .color-primary{
+        color:#4aaaa5;
+    }
 /* Text alignment Classes */
     .tc{
         text-align: center;
@@ -104,7 +107,7 @@
         .pr-md{
             padding-right: 1%;
         }
-        
+
         .lay-80{
             width:80%;
         }
