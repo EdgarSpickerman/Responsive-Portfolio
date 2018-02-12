@@ -7,27 +7,29 @@
         text-decoration: none;
         color: #777;
     }
-    #projects p{
-        position: absolute;
-        bottom: 0;
-        z-index: 100;
-    }
-    #projects li{
-        position: relative;
-    }
+    /* These 2 blocks are to allow the p to be on top of the images */
+        #projects p{
+            position: absolute;
+            bottom: 0;
+            z-index: 100;
+        }
+        #projects li{
+            position: relative;
+        }
     /* setting the navigation li's to inline block so they are not vertically stacked */
     #main-nav li, #social-nav li{
         display: inline-block;
     }
-    #social-nav li{
-        width: 20%;
-    }
-    img,input,textarea,#projects p{
-        width:100%;
-    }
-    .default-lay{
-        width: 90%;
-    }
+    /* making elements fluid */
+        #social-nav li{
+            width: 20%;
+        }
+        img,input,textarea,#projects p{
+            width:100%;
+        }
+        .default-lay{
+            width: 90%;
+        }
 /* Color Classes */
     .color-white{
         color:#fff;
@@ -91,6 +93,8 @@
     .bt{
         border-top: 4px solid #4aaaa5;
     }
+/* Sticky footer */
+
 /*  Media Queries*/
     @media (min-width: 768px){
         .clearfix:after{
@@ -100,9 +104,6 @@
         }
         .float-md-left{
             float: left;
-        }
-        .ml-md-4{
-            margin-left: 4%;
         }
         .float-md-right{
             float: right;
@@ -119,6 +120,9 @@
         .mr-md{
             margin-right:.5%;
         }
+        .ml-md-4{
+            margin-left: 4%;
+        }
         .ml-md{
             margin-left: .5%;
         }
@@ -131,9 +135,6 @@
         img.float-md-left{
             float:none;
         }
-        .pr-md-1{
-            padding-right:0;
-        }
         .mr-md{
             margin-right:0;
         }
@@ -142,6 +143,9 @@
         }
         .pl-md{
             padding-left:0;
+        }
+        .pr-md-1{
+            padding-right:0;
         }
         .float-lg-left{
             float:left;
